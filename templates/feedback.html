@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class = "box">
+    <h1 style ="line-height: 100px;">Type feedback in the box to send to me!</h1>
+    <form action="/feedback" method = "POST">
+        <input type="text" name="content" id="content" size="50" >
+        <input type="submit" value="Send" maxlength="100" size="200">       
+        <h2 style="line-height:100px;">Thank you for taking the time to view my website!</h2> 
+        <p style="line-height:0px;">I hope you consider me for Honors American studies next year.</p>
+    </form>
+
+</div>
+
+{% endblock %}
