@@ -24,6 +24,8 @@ def email():
         msg = Message('User Email!', recipients=['owenmistretta@gmail.com'])
         msg.body = request.form['content']
         mail.send(msg)
+        return render_template('feedback.html')
+        
         
        
     else: 
